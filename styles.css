@@ -51,7 +51,7 @@ h1 {
 }
 
 .choice {
-    font-size: min(20vw, 16rem);
+    font-size: min(20vw, 12rem);
     margin-bottom: 4rem;
 }
 
@@ -71,16 +71,6 @@ h1 {
     animation-name: transition;
     animation-duration: 1s;
     background: rgba(0, 0, 0, 0.5);
-}
-
-@keyframes transition {
-    from {
-        opacity: 0;
-    }
-  
-    to {
-        opacity: 1;
-    }
 }
 
 #win-status {
@@ -132,4 +122,51 @@ h1 {
     width: 100%;
     margin-top: 1rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .choice {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    #answer-symbol {
+        font-size: 10rem;
+    }
+
+    #selection {
+        margin-bottom: 4rem;
+    }
+
+    .container {
+        height: 10rem;
+    }
+
+    #restart {
+        padding: 1rem 10vw;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .choice {
+        font-size: 4rem;
+    }
+    .score {
+        font-size: 1.5rem;
+    }
+}
+
+
+@keyframes transition {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
 }
